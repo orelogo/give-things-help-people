@@ -11,7 +11,13 @@ class App extends Component {
           <h2>Give Things, Help People</h2>
         </div>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
+          Thank you for visiting Give Things, Help People.
+          Click on the type of donation you would like to give!
+        </p>
+        <p className="App-buttons">
+        <button onClick={() => alert("click")}>Clothing</button>
+        <button>Kitchen Items</button>
+        <button>Bedroom Items</button>
         </p>
       </div>
     );
