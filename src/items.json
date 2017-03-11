@@ -4,49 +4,49 @@
       "name": "Small pan",
       "category": "kitchen",
       "needed": 10,
-      "pledged": 0,
+      "pledged": 0
     },
     {
       "name": "Medium pot",
       "category": "kitchen",
       "needed": 15,
-      "pledged": 2,
+      "pledged": 2
     },
     {
       "name": "Men's pants",
       "category": "clothing",
       "needed": 20,
-      "pledged": 5,
+      "pledged": 5
     },
     {
       "name": "Pretty dress",
       "category": "clothing",
       "needed": 14,
-      "pledged": 3,
+      "pledged": 3
     },
     {
       "name": "Mattress",
       "category": "bedroom",
       "needed": 20,
-      "pledged": 7,
+      "pledged": 7
     },
     {
       "name": "Bed sheets",
       "category": "bedroom",
       "needed": 13,
-      "pledged": 8,
+      "pledged": 8
     },
     {
       "name": "Spatula",
       "category": "kitchen",
       "needed": 400,
-      "pledged": 26,
+      "pledged": 26
     },
     {
       "name": "Socks",
       "category": "clothing",
       "needed": 27,
-      "pledged": 14,
-    },
+      "pledged": 14
+    }
   ]
 }
