@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import './bootstrap.css';
-let jsonData = require('./items.json').items
+let jsonData = require('./items.json').items;
 
 class App extends Component {
   constructor() {
@@ -11,8 +11,8 @@ class App extends Component {
       listOfItems: null,
     }
   }
-  renderItem(name, required, pledged) {
-    return <Item name={name} required={required} pledged={pledged} />;
+  renderItem(key, name, required, pledged) {
+    return <Item key={key} name={name} required={required} pledged={pledged}/>;
   }
 
   getItems(category) {
@@ -33,11 +33,11 @@ class App extends Component {
   }
 
   renderItems() {
-    let items = this.state.listOfItems;
-    for (let i = 0; i < items.length; i++) {
-      renderItem(item.name, item.required, item.pledged);
-    }
+    return this.state.listOfItems.map(item => {
+      return this.renderItem(item.key, item.name, item.needed, item.pledged);
+    });
   }
+
   render() {
     return (
       <div className="App">
@@ -55,7 +55,7 @@ class App extends Component {
           {this.renderButton("Bedroom Items", "bedroom")}
         </p>
         <ul>
-          {renderItems()}
+          {this.state.listOfItems && this.renderItems()}
         </ul>
       </div>
     );
@@ -77,6 +77,5 @@ function Item(props) {
     </li>
   );
 }
-
 
 export default App;

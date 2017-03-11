@@ -1,48 +1,56 @@
 {
   "items": [
     {
+      "key": "839ec8c4",
       "name": "Small pan",
       "category": "kitchen",
       "needed": 10,
       "pledged": 0
     },
     {
+      "key": "839ec8dc",
       "name": "Medium pot",
       "category": "kitchen",
       "needed": 15,
       "pledged": 2
     },
     {
+      "key": "839ec8ab",
       "name": "Men's pants",
       "category": "clothing",
       "needed": 20,
       "pledged": 5
     },
     {
+      "key": "839ec8c23",
       "name": "Pretty dress",
       "category": "clothing",
       "needed": 14,
       "pledged": 3
     },
     {
+      "key": "839ec8rt",
       "name": "Mattress",
       "category": "bedroom",
       "needed": 20,
       "pledged": 7
     },
     {
+      "key": "839ec89o",
       "name": "Bed sheets",
       "category": "bedroom",
       "needed": 13,
       "pledged": 8
     },
     {
+      "key": "839ec8lm",
       "name": "Spatula",
       "category": "kitchen",
       "needed": 400,
       "pledged": 26
     },
     {
+      "key": "839ec8gn",
       "name": "Socks",
       "category": "clothing",
       "needed": 27,
