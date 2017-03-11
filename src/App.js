@@ -54,7 +54,7 @@ class App extends Component {
           {this.renderButton("Kitchen Items", "kitchen")}
           {this.renderButton("Bedroom Items", "bedroom")}
         </p>
-        <ul>
+        <ul className="list-unstyled">
           {this.state.listOfItems && this.renderItems()}
         </ul>
       </div>
@@ -64,7 +64,7 @@ class App extends Component {
 
 function CategoryButton(props) {
   return (
-    <button className="btn btn-lg" onClick={() => props.onClick()}>
+    <button className="btn btn-lg app-btn" onClick={() => props.onClick()}>
       {props.name}
     </button>
   );
@@ -74,8 +74,12 @@ function Item(props) {
   return (
     <li>
     {props.name}, Required: {props.required}, Pledged: {props.pledged}
+    <button className="btn btn-sm btn-success app-btn" onClick={() => props.onClick()}>
+      I Pledge To Donate
+    </button>
     </li>
   );
 }
+
 
 export default App;
