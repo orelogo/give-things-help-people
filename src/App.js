@@ -9,10 +9,22 @@ class App extends Component {
     super();
     this.state = {
       listOfItems: null,
+      category: null
     }
   }
   renderItem(key, name, required, pledged) {
-    return <Item key={key} name={name} required={required} pledged={pledged}/>;
+    return <Item key={key} name={name} required={required} pledged={pledged} onClick={() => this.updateJson(key)}/>;
+  }
+
+  updateJson(key) {
+    for (let i = 0; i < jsonData.length; i++) {
+      let item = jsonData[i];
+      if (item.key === key) {
+        item.pledged++;
+        jsonData[i] = item;
+      }
+    }
+    this.getItems(this.state.category);
   }
 
   getItems(category) {
@@ -24,7 +36,8 @@ class App extends Component {
       }
     }
     this.setState({
-      listOfItems: items
+      listOfItems: items,
+      category: category
     })
   }
 
